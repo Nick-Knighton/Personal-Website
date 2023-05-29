@@ -42,6 +42,35 @@ const handleCountryChange = (e) => {
     });
   };
 
+  function deselectAllCountries() {
+    const countryCheckboxes = document.querySelectorAll('#Country input[type="checkbox"]');
+    countryCheckboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  }
+  
+  function selectAllCountries() {
+    const countryCheckboxes = document.querySelectorAll('#Country input[type="checkbox"]');
+    countryCheckboxes.forEach((checkbox) => {
+      checkbox.checked = true;
+    });
+  }
+  
+  function deselectAllCameras() {
+    const cameraCheckboxes = document.querySelectorAll('#Camera input[type="checkbox"]');
+    cameraCheckboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  }
+  
+  function selectAllCameras() {
+    const cameraCheckboxes = document.querySelectorAll('#Camera input[type="checkbox"]');
+    cameraCheckboxes.forEach((checkbox) => {
+      checkbox.checked = true;
+    });
+  }
+  
+
   const photos = [
     { id: 1, src: "photo1.jpg", country: "USA", camera: "Sony A7iii" },
     { id: 2, src: "photo2.jpg", country: "Canada", camera: "Sony A7iii" },
@@ -131,6 +160,16 @@ const handleCountryChange = (e) => {
                                 </label>
                             </li>
                         </ul>
+
+                        {/* Buttons */}
+                        <div class="flex justify-center mt-4">
+                            <button class="text-sm text-black hover:text-gray-700" onClick={deselectAllCountries}>
+                                Deselect All
+                            </button>
+                            <button class="ml-4 text-sm text-black hover:text-gray-700" onClick={selectAllCountries}>
+                                Select All
+                            </button>
+                        </div>
                     </div>
 
 
@@ -194,14 +233,24 @@ const handleCountryChange = (e) => {
                                 </label>
                             </li>
                         </ul>
+
+                        {/* Buttons */}
+                        <div class="flex justify-center mt-4">
+                            <button class="text-sm text-black hover:text-gray-700" onClick={deselectAllCameras}>
+                                Deselect All
+                            </button>
+                            <button class="ml-4 text-sm text-black hover:text-gray-700" onClick={selectAllCameras}>
+                                Select All
+                            </button>
+                        </div>
                     </div>
             
 
                 {/* Display filtered photos */}
                 <div className="photo-gallery">
                     {filteredPhotos.map((photo) => {
-                        console.log("Country List: ", selectedCountries);
-                        console.log("Camera List: ", selectedCameras);
+                        // console.log("Country List: ", selectedCountries);
+                        // console.log("Camera List: ", selectedCameras);
                         
                         return (
                         <img
