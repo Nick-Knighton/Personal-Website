@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 
 //Sections
-import HomeSection from './Sections/HomeSection';
-import PortfolioSection from './Sections/PortfolioSection';
-import PhotographySection from './Sections/PhotoGraphySection';
-import CountriesVisitedSection from './Sections/CountriesVisitedSection';
-import ResumeSection from './Sections/ResumeSection';
+import HomeSection from './Sections/HomeSection/HomeSection';
+import PortfolioSection from './Sections/Portfolio/PortfolioSection';
+import PhotographySection from './Sections/Photography/PhotoGraphySection';
+import CountriesVisitedSection from './Sections/CountriesVisited/CountriesVisitedSection';
+import ResumeSection from './Sections/Resume/ResumeSection';
 
 
 export default function Home() {
