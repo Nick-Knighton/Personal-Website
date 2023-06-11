@@ -2,45 +2,45 @@ import "flowbite";
 import React, { useEffect } from "react";
 
 const DropdownSearchMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
-//   useEffect(() => {
-//     selectAllOptions();
-//   }, []);
+  //   useEffect(() => {
+  //     selectAllOptions();
+  //   }, []);
 
-//   const handleOptionChange = (e) => {
-//     const selectedCheckbox = e.target;
-//     const selectedValue = selectedCheckbox.value;
+  //   const handleOptionChange = (e) => {
+  //     const selectedCheckbox = e.target;
+  //     const selectedValue = selectedCheckbox.value;
 
-//     setSelectedOptions((prevSelectedOptions) => {
-//       if (prevSelectedOptions.includes(selectedValue)) {
-//         return prevSelectedOptions.filter((value) => value !== selectedValue);
-//       } else {
-//         return [...prevSelectedOptions, selectedValue];
-//       }
-//     });
-//   };
+  //     setSelectedOptions((prevSelectedOptions) => {
+  //       if (prevSelectedOptions.includes(selectedValue)) {
+  //         return prevSelectedOptions.filter((value) => value !== selectedValue);
+  //       } else {
+  //         return [...prevSelectedOptions, selectedValue];
+  //       }
+  //     });
+  //   };
 
-//   function deselectAllOptions() {
-//     const optionCheckboxes = document.querySelectorAll(
-//       `#${dropdownTitle} input[type="checkbox"]`
-//     );
-//     optionCheckboxes.forEach((checkbox) => {
-//       checkbox.checked = false;
-//     });
-//     setSelectedOptions([]);
-//   }
+  //   function deselectAllOptions() {
+  //     const optionCheckboxes = document.querySelectorAll(
+  //       `#${dropdownTitle} input[type="checkbox"]`
+  //     );
+  //     optionCheckboxes.forEach((checkbox) => {
+  //       checkbox.checked = false;
+  //     });
+  //     setSelectedOptions([]);
+  //   }
 
-//   function selectAllOptions() {
-//     const optionCheckboxes = document.querySelectorAll(
-//       `#${dropdownTitle} input[type="checkbox"]`
-//     );
-//     optionCheckboxes.forEach((checkbox) => {
-//       checkbox.checked = true;
-//     });
-//     const allOptions = Array.from(optionCheckboxes).map(
-//       (checkbox) => checkbox.value
-//     );
-//     setSelectedOptions(allOptions);
-//   }
+  //   function selectAllOptions() {
+  //     const optionCheckboxes = document.querySelectorAll(
+  //       `#${dropdownTitle} input[type="checkbox"]`
+  //     );
+  //     optionCheckboxes.forEach((checkbox) => {
+  //       checkbox.checked = true;
+  //     });
+  //     const allOptions = Array.from(optionCheckboxes).map(
+  //       (checkbox) => checkbox.value
+  //     );
+  //     setSelectedOptions(allOptions);
+  //   }
 
   return (
     <div>
@@ -52,9 +52,19 @@ const DropdownSearchMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
         type="button"
       >
         Filter by Tags{" "}
-        <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        <svg
+          class="w-4 h-4 ml-2"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
           ></path>
         </svg>
       </button>
@@ -69,8 +79,18 @@ const DropdownSearchMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
           </label>
           <div class="relative">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+              <svg
+                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
               </svg>
             </div>
             <input
@@ -81,8 +101,11 @@ const DropdownSearchMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
             />
           </div>
         </div>
-        
-        <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownSearchButton">
+
+        <ul
+          class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
+          aria-labelledby="dropdownSearchButton"
+        >
           <li>
             <div class="flex items-center pl-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
               <input
@@ -100,7 +123,6 @@ const DropdownSearchMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
             </div>
           </li>
         </ul>
-
       </div>
     </div>
   );

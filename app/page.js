@@ -1,6 +1,5 @@
-import styles from './/CSS/typeWriter.css'
-import Link from "next/link";
 import React from "react";
+
 
 //Sections
 import HomeSection from './Sections/HomeSection/HomeSection';

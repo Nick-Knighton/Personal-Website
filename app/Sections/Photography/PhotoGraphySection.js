@@ -63,7 +63,7 @@ const PhotographySection = () => {
               setSelectedOptions={setSelectedCameras}
             />
 
-            <DropdownSearchMenu></DropdownSearchMenu>
+            {/* <DropdownSearchMenu></DropdownSearchMenu> */}
 
             
           </div>

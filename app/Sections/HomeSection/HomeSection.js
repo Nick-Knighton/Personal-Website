@@ -1,23 +1,23 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./typeWriter.css"
 
 export default function HomeSection() {
     return (
         <section className="grid place-content-center min-h-screen" id="type-writer-section">
             <div className='flex items-center justify-center h-screen'>
                 <div className='text-center'>
-                    <h1 className='text-6xl font-bold'>Hello,</h1>
+                    <h1 className='text-6xl font-bold'>Hello, I'm</h1>
 
                     {/* Type Writer Effect */}
                     <div className="wrapper">
-                    <div className="static-txt">I'm</div>
-                    <ul className="dynamic-txts">
-                        <li><span>Nick Knighton</span></li>
-                        <li><span>a Software Engineer</span></li>
-                        <li><span>a Computer Scientist</span></li>
-                        <li><span>a World Traveler</span></li>
-                        <li><span>a Freelancer</span></li>
-                    </ul>
+                        <ul className="dynamic-txts">
+                            <li><span>Nick Knighton</span></li>
+                            <li><span>a Software Engineer</span></li>
+                            <li><span>a Computer Scientist</span></li>
+                            <li><span>a World Traveler</span></li>
+                            <li><span>a Front End Designer</span></li>
+                        </ul>
                     </div>
 
                     {/* Links */}
