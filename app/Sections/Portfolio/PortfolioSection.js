@@ -27,7 +27,7 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section class="h-screen flex flex-col" id="portfolio-section">
+    <section class="h-screen flex flex-col" id="portfolio-section test">
       <div class="mx-32 mt-16 h-full border-8 border-amber-800"></div>
 
       <div className="mx-auto mt-16 mb-32">
