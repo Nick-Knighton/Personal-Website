@@ -28,8 +28,16 @@ const PortfolioSection = () => {
 
   return (
     <section class="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
-      <div class="mx-32 mt-16 h-full border-8 border-amber-800">
+      
+      <div class="mx-32 mt-16 h-full border-8 border-amber-800 flex flex-wrap ">
+        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
+        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
+        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
+        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
 
+        {/* {filteredProjects.map((projectIndv) => (
+          <ProjectCard project={projectIndv}></ProjectCard>
+        ))}  */}
       </div>
 
       <div className="mt-16 mb-32">
@@ -44,9 +52,3 @@ const PortfolioSection = () => {
 };
 
 export default PortfolioSection;
-
-{
-  /* {filteredProjects.map((projectIndv) => (
-  <ProjectCard project={projectIndv}></ProjectCard>
-))} */
-}

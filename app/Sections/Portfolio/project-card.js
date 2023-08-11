@@ -6,7 +6,7 @@ import styles from "./carousel-button.css";
 
 const ProjectCard = ({project}) => {
     return (
-        <div class="bg-slate-50 p-5 shadow-md rounded-lg flex flex-col justify-between h-full">
+        <div class="bg-slate-50 p-5 shadow-md rounded-lg flex flex-col justify-between h-1/2 w-1/2">
             <div class="h-60">
 
             <Carousel slide={false} className="dark h-full">
