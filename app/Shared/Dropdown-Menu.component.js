@@ -43,7 +43,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
   }
 
   return (
-    <div className="">
+    <div>
       <button
         id={`dropdown${dropdownTitle}`}
         data-dropdown-toggle={dropdownTitle}

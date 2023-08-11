@@ -4,7 +4,7 @@ import styles from "./typeWriter.css"
 
 const HomeSection = () => {
     return (
-        <section className="h-screen" id="type-writer-section">
+        <section className="h-screen flex flex-col" id="type-writer-section">
             <div className='flex items-center justify-center h-screen'>
                 <div className='text-center'>
                     <h1 className='text-6xl font-bold'>Hello, I'm</h1>

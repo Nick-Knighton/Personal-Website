@@ -27,12 +27,13 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section class=" h-screen flex flex-col" id="portfolio-section">
-      <div class="mx-32 mt-16 h-full border-8 border-amber-800"></div>
+    <section class="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
+      <div class="mx-32 mt-16 h-full border-8 border-amber-800">
 
-      <div className="mt-16 mb-32 w-screen">
+      </div>
+
+      <div className="mt-16 mb-32">
         <DropdownMenu
-          className="bg-black"
           options={technologyList}
           dropdownTitle="Technology"
           setSelectedOptions={setSelectedTechnologies}
