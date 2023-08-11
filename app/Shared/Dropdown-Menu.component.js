@@ -43,11 +43,14 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
   }
 
   return (
-    <div>
+    <div className="">
       <button
         id={`dropdown${dropdownTitle}`}
         data-dropdown-toggle={dropdownTitle}
-        className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        className="
+          text-lg rounded-lg px-4 py-2.5 flex items-center justify-center
+          w-2/6 h-16 border border-primary-500 mx-auto
+        "
         type="button"
       >
         Filter by {dropdownTitle}
@@ -70,7 +73,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
 
       <div
         id={dropdownTitle}
-        className="z-10  hidden  w-56  bg-white rounded-lg shadow dark:bg-gray-700"
+        className="z-10  hidden p-2 w-56  bg-white rounded-lg shadow dark:bg-gray-700"
       >
         <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">
           {dropdownTitle}:

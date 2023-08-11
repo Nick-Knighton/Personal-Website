@@ -10,9 +10,9 @@ import ResumeSection from './Sections/Resume/ResumeSection';
 
 export default function Home() {
   return (
-    <div class="w-screen">
+    <div className="flex flex-col">
       {/* Home Section */}
-      <HomeSection/>
+      {/* <HomeSection/> */}
 
       {/* Portfolio Section */}
       <PortfolioSection/>

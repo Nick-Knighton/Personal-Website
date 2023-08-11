@@ -2,14 +2,13 @@ import React from "react";
 import Link from "next/link";
 import styles from "./typeWriter.css"
 
-export default function HomeSection() {
+const HomeSection = () => {
     return (
-        <section className="grid place-content-center min-h-screen" id="type-writer-section">
+        <section className="h-screen" id="type-writer-section">
             <div className='flex items-center justify-center h-screen'>
                 <div className='text-center'>
                     <h1 className='text-6xl font-bold'>Hello, I'm</h1>
 
-                    {/* Type Writer Effect */}
                     <div className="wrapper">
                         <ul className="dynamic-txts">
                             <li><span>Nick Knighton</span></li>
@@ -20,7 +19,6 @@ export default function HomeSection() {
                         </ul>
                     </div>
 
-                    {/* Links */}
                     <div className="flex justify-center space-x-6 mt-8">
                     <Link href="#portfolio-section" className="py-2 px-4 border border-transparent rounded-md text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                         Portfolio
@@ -41,3 +39,5 @@ export default function HomeSection() {
         </section>
     )
 }
+
+export default HomeSection;

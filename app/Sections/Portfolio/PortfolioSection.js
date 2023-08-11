@@ -27,10 +27,10 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section class="h-screen flex flex-col" id="portfolio-section test">
+    <section class=" h-screen flex flex-col" id="portfolio-section">
       <div class="mx-32 mt-16 h-full border-8 border-amber-800"></div>
 
-      <div className="mx-auto mt-16 mb-32">
+      <div className="mt-16 mb-32 w-screen">
         <DropdownMenu
           className="bg-black"
           options={technologyList}
