@@ -2,8 +2,6 @@
 import React from "react";
 
 import WorldMap from "react-svg-worldmap";
-import { CountryContext } from "react-svg-worldmap";
-import { transparent } from "tailwindcss/colors";
 
 export default function CountriesVisitedSection() {
   const data = [

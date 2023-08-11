@@ -70,7 +70,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
 
       <div
         id={dropdownTitle}
-        className="z-10  hidden  w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700"
+        className="z-10  hidden  w-56  bg-white rounded-lg shadow dark:bg-gray-700"
       >
         <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">
           {dropdownTitle}:

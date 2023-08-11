@@ -1,6 +1,5 @@
 import React from "react";
 
-
 //Sections
 import HomeSection from './Sections/HomeSection/HomeSection';
 import PortfolioSection from './Sections/Portfolio/PortfolioSection';
@@ -11,8 +10,7 @@ import ResumeSection from './Sections/Resume/ResumeSection';
 
 export default function Home() {
   return (
-    <div>
-      
+    <div class="w-screen">
       {/* Home Section */}
       <HomeSection/>
 
@@ -20,13 +18,13 @@ export default function Home() {
       <PortfolioSection/>
 
       {/* Photography Section */}
-      <PhotographySection/>
+      {/* <PhotographySection/> */}
 
       {/* Countries Visited Section */}
-      <CountriesVisitedSection/>
+      {/* <CountriesVisitedSection/> */}
 
       {/* Resume Section */}
-      <ResumeSection/>
+      {/* <ResumeSection/> */}
       
     </div>
   )
