@@ -5,6 +5,7 @@ import { projects } from "./projects-constant";
 
 import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
 import ProjectCard from "./project-card";
+import '../Portfolio/grid.css'
 
 const PortfolioSection = () => {
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
@@ -29,15 +30,10 @@ const PortfolioSection = () => {
   return (
     <section class="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
       
-      <div class="mx-32 mt-16 h-full border-8 border-amber-800 flex flex-wrap ">
-        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
-        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
-        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
-        <div className="bg-white w-1/3 h-1/2 round-lg"></div>
-
-        {/* {filteredProjects.map((projectIndv) => (
+      <div class="mx-32 mt-16 h-full projectContainer rounded-lg">
+        {filteredProjects.map((projectIndv) => (
           <ProjectCard project={projectIndv}></ProjectCard>
-        ))}  */}
+        ))} 
       </div>
 
       <div className="mt-16 mb-32">

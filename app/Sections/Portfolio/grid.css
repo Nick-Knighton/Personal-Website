@@ -1,0 +1,13 @@
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    gap: 15px;
+}
+
+.projectWidth{
+    width: calc(33.33333333% - 10px);
+    height: calc(50% - 7.5px);
+}
