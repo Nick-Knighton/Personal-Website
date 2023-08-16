@@ -12,6 +12,14 @@
     height: calc(50% - 7.5px);
 }
 
-@media screen {
-    
+@media (max-width: 768px) {
+    .projectWidth{
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 640px) {
+    .projectWidth{
+        width: calc(100% - 10px);
+    }
 }
