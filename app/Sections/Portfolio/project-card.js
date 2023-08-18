@@ -5,7 +5,6 @@ import { Carousel } from "flowbite-react";
 
 import "./carousel-button.css";
 import "../Portfolio/grid.css";
-import "../../../public/Project Photos/Personal Website/countries-visited.png";
 
 const ProjectCard = ({ project }) => {
 

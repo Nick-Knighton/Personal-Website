@@ -13,9 +13,9 @@
       <div className="flex flex-col">
         <HomeSection/>
         <PortfolioSection/>
-        {/* <PhotographySection/> */}
-        {/* <ResumeSection/> */}
-        {/* <CountriesVisitedSection/> */}
+        <PhotographySection/>
+        <CountriesVisitedSection/>
+        {/* <ResumeSection/>  */}
       </div>
     )
   }
