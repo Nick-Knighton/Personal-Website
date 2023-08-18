@@ -1,10 +1,9 @@
 "use client"; // This is a client component
-
 import React, { useState } from "react";
-import { projects } from "./projects-constant";
+import { projects } from "./Projects-Constant";
 
 import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
-import ProjectCard from "./project-card";
+import ProjectCard from "./Project-Card";
 import '../Portfolio/grid.css'
 
 const PortfolioSection = () => {
@@ -17,7 +16,7 @@ const PortfolioSection = () => {
     "C++",
     "Python",
     "JavaScript",
-    "TypeScript",
+    "TypeScript"
   ];
 
   const filteredProjects =
@@ -28,11 +27,11 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section class="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
+    <section className="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
       
-      <div class="mx-32 mt-16 h-full projectContainer rounded-lg">
+      <div className="mx-32 mt-16 h-full projectContainer rounded-lg">
         {filteredProjects.map((projectIndv) => (
-          <ProjectCard project={projectIndv}></ProjectCard>
+          <ProjectCard project={projectIndv} key={projectIndv.title}></ProjectCard>
         ))} 
       </div>
       <div className="mt-16 mb-16">

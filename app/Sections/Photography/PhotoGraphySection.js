@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
-import DropdownSearchMenu from "@/app/Shared/Dropdown-Search.component";
 
 const PhotographySection = () => {
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -10,37 +9,37 @@ const PhotographySection = () => {
 
   const photos = [
     {
-      id: 1,
+      value: 1,
       src: "/Photos/DSC03617.JPG",
       country: "USA",
       camera: "Sony A7iii",
     },
     {
-      id: 2,
+      value: 2,
       src: "/Photos/DSC03794.JPG",
       country: "Canada",
       camera: "Sony A7iii",
     },
     {
-      id: 3,
+      value: 3,
       src: "/Photos/DSC03823.JPG",
       country: "France",
       camera: "Sony A7iii",
     },
     {
-      id: 4,
+      value: 4,
       src: "/Photos/DSC03869.JPG",
       country: "USA",
       camera: "Sony A7iii",
     },
     {
-      id: 5,
+      value: 5,
       src: "/Photos/DSC04091.JPG",
       country: "Canada",
       camera: "GoPro Max",
     },
     {
-      id: 6,
+      value: 6,
       src: "/Photos/DSC04120.JPG",
       country: "France",
       camera: "Insta360 ONER",
@@ -104,7 +103,6 @@ const PhotographySection = () => {
               setSelectedOptions={setSelectedCameras}
             />
 
-            {/* <DropdownSearchMenu></DropdownSearchMenu> */}
           </div>
         </div>
       </div>

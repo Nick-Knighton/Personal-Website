@@ -7,8 +7,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
   }, []);
 
   const handleOptionChange = (e) => {
-    const selectedCheckbox = e.target;
-    const selectedValue = selectedCheckbox.value;
+    const selectedValue = e.target.value;
 
     setSelectedOptions((prevSelectedOptions) => {
       if (prevSelectedOptions.includes(selectedValue)) {
@@ -63,9 +62,9 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M19 9l-7 7-7-7"
           ></path>
         </svg>
@@ -84,7 +83,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
           aria-labelledby={`dropdown${dropdownTitle}`}
         >
           {options.map((item) => (
-            <li className="flex items-center" key={item.value}>
+            <li className="flex items-center" key={item}>
               <input
                 id={item}
                 type="checkbox"
