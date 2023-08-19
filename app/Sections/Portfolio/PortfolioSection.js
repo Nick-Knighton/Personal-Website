@@ -40,6 +40,7 @@ const PortfolioSection = () => {
           options={technologyList}
           dropdownTitle="Technology"
           setSelectedOptions={setSelectedTechnologies}
+          selectedOptions={selectedTechnologies}
         />
       </div>
     </section>

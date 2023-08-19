@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Modal, Button } from "flowbite-react";
 
-const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
+const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTitle }) => {
   const [openModal, setOpenModal] = useState();
   const props = { openModal, setOpenModal };
 
@@ -23,27 +23,11 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
   };
   
   function deselectAllOptions() {
-    const optionCheckboxes = document.querySelectorAll(
-      `#${dropdownTitle} input[type="checkbox"]`
-    );
-    optionCheckboxes.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
     setSelectedOptions([]);
   }
   
   function selectAllOptions() {
-    const optionCheckboxes = document.querySelectorAll(
-      `#${dropdownTitle} input[type="checkbox"]`
-      );
-      console.log(optionCheckboxes)
-    optionCheckboxes.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-    const allOptions = Array.from(optionCheckboxes).map(
-      (checkbox) => checkbox.value
-    );
-    setSelectedOptions(allOptions);
+    setSelectedOptions(options);
   }
   
 
@@ -86,6 +70,7 @@ const DropdownMenu = ({ options, setSelectedOptions, dropdownTitle }) => {
                     className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                     value={item}
                     onChange={handleOptionChange}
+                    checked={selectedOptions.includes(item)}
                   />
 
                   <label
