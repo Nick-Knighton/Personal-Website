@@ -87,17 +87,6 @@ export const projects = [
   },
   
   {
-    title: "RBFCU Non-Member Online Loan Application",
-    description:
-      "During my internship at RBFCU, I undertook a web development project to update their Non-member loan application page. Using Angular, TypeScript, and GitHub, I successfully migrated the page from outdated technology to the modern Angular framework. In addition to the technical update, I also revamped the page's style to align it with RBFCU's current style guide. The project not only improved the user experience by leveraging Angular's robust features but also ensured a cohesive visual identity by adhering to the organization's style guidelines. Through this project, I demonstrated my proficiency in Angular, TypeScript, and attention to design details, contributing to RBFCU's ongoing commitment to providing an enhanced digital experience for their customers.",
-    technology: ["Angular", "TypeScript", "Github", "Tachyons"],
-    images: [
-      { src: "/Project Photos/RBFCU/applicant-info-old.png" },
-      { src: "/Project Photos/RBFCU/loan-screen-old.png" },
-    ],
-  },
-  
-  {
     title: "Matrix Stack Robot",
     description: "Using C++ and OpenGL I created a robot simulation that demonstrates an adept utilization of matrix stacks. The core objective was to master and apply hierarchical 3D transformations, with a goal of creating an interactive robot that could be controlled through keyboard inputs. The project entailed the design and implementation of a structured robotic character. This hierarchical arrangement encompassed a diverse assembly of components, including a central Torso, articulated Head, Upper and Lower limbs for both arms and legs, culminating in a meticulously interconnected framework that facilitated dynamic manipulation and control. Through the fusion of C++ programming and OpenGL graphics rendering, the resultant interactive robot simulation not only exhibited a visually captivating manifestation but also embodied a profound understanding of hierarchical transformations and their pivotal role in synthesizing complex, articulated structures.",
     technology: ["C++", "OpenGL"],
@@ -105,6 +94,17 @@ export const projects = [
       { src: "/Project Photos/Matrix-Stack-Robot/robot-transformed.jpg" },
       { src: "/Project Photos/Matrix-Stack-Robot/robot.jpg" },
       { src: "/Project Photos/Matrix-Stack-Robot/robot-transformed-2.jpg" },
+    ],
+  },
+
+  {
+    title: "RBFCU Non-Member Online Loan Application",
+    description:
+      "During my internship at RBFCU, I undertook a web development project to update their Non-member loan application page. Using Angular, TypeScript, and GitHub, I successfully migrated the page from outdated technology to the modern Angular framework. In addition to the technical update, I also revamped the page's style to align it with RBFCU's current style guide. The project not only improved the user experience by leveraging Angular's robust features but also ensured a cohesive visual identity by adhering to the organization's style guidelines. Through this project, I demonstrated my proficiency in Angular, TypeScript, and attention to design details, contributing to RBFCU's ongoing commitment to providing an enhanced digital experience for their customers.",
+    technology: ["Angular", "TypeScript", "Github", "Tachyons"],
+    images: [
+      { src: "/Project Photos/RBFCU/applicant-info-old.png" },
+      { src: "/Project Photos/RBFCU/loan-screen-old.png" },
     ],
   },
 
