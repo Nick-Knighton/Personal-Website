@@ -13,8 +13,8 @@
       <div className="flex flex-col">
         <HomeSection/>
         <PortfolioSection/>
-        <PhotographySection/>
-        <CountriesVisitedSection/>
+        {/* <PhotographySection/> */}
+        {/* <CountriesVisitedSection/> */}
         {/* <ResumeSection/>  */}
       </div>
     )
