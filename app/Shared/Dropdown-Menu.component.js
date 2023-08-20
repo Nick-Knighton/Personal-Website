@@ -42,6 +42,7 @@ const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTi
       </Button>
 
       <Modal
+        dismissible
         show={props.openModal === "default"}
         onClose={() => props.setOpenModal(undefined)}
       >

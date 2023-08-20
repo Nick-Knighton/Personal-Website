@@ -27,15 +27,15 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section className="w-full h-screen flex flex-col bg-slate-600" id="portfolio-section">
+    <section className="w-full h-screen flex flex-col bg-slate-700" id="portfolio-section">
       
-      <div className="mx-32 mt-16 h-full projectContainer rounded-lg">
+      <div className="mx-32 mt-12 h-full projectContainer rounded-lg">
         {filteredProjects.map((projectIndv) => (
           <ProjectCard project={projectIndv} key={projectIndv.title}></ProjectCard>
         ))} 
       </div>
-      <div className="mt-16 mb-16">
 
+      <div className="flex items-center justify-center h-1/6">
         <DropdownMenu
           options={technologyList}
           dropdownTitle="Technology"

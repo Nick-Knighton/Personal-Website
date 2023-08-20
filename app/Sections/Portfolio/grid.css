@@ -7,19 +7,19 @@
     gap: 15px;
 }
 
-.projectWidth{
+.projectDimensions{
     width: calc(33.33333333% - 10px);
     height: calc(50% - 7.5px);
 }
 
-@media (max-width: 768px) {
-    .projectWidth{
+@media (max-width: 1000px) {
+    .projectDimensions{
         width: calc(50% - 10px);
     }
 }
 
-@media (max-width: 640px) {
-    .projectWidth{
+@media (max-width: 750px) {
+    .projectDimensions{
         width: calc(100% - 10px);
     }
 }
