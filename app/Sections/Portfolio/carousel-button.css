@@ -1,8 +1,7 @@
-.group{
-    background-color: rgb(55 65 81);
-    border-radius: 50px;
+.bg-white\/30{
+    background: rgba(50, 50, 50, 0.6);
+    
 }
-
-svg{
-    stroke: white;
-}
+ .bg-white\/30:hover{
+    background: rgba(50,50,50,1)!important;
+ }

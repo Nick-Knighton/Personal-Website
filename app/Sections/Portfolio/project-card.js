@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectModal from "./Project-Modal" ;
+import ProjectModal from "./Project-Modal";
 import { useState } from "react";
 
 import { Carousel, Button } from "flowbite-react";
@@ -12,7 +12,10 @@ const ProjectCard = ({ project }) => {
   const props = { openModal, setOpenModal };
   return (
     <div className="bg-white projectDimensions rounded-lg">
-      <h1 className="text-gray-700 text-xl text-center font-bold flex items-center justify-center" style={{height: "10%"}}>
+      <h1
+        className="text-gray-700 text-xl text-center font-bold flex items-center justify-center"
+        style={{ height: "10%" }}
+      >
         {project.title}
       </h1>
 
@@ -30,12 +33,16 @@ const ProjectCard = ({ project }) => {
             },
             indicators: {
               active: {
-                off: "bg-gray-400 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800",
-                on: "bg-gray-700 dark:bg-gray-800",
+                off: "bg-gray-400 hover:bg-gray-500",
+                on: "bg-gray-700",
               },
               base: "h-3 w-3 rounded-full",
               wrapper:
                 "absolute left-1/2 flex -translate-x-1/2 space-x-2 rounded-lg bottom-1",
+            },
+            control: {
+              base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-black group-hover:bg-white group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+              icon: "h-5 w-5 text-black dark:text-gray-800 sm:h-6 sm:w-6 bg-black",
             },
           }}
         >
@@ -48,11 +55,18 @@ const ProjectCard = ({ project }) => {
             />
           ))}
         </Carousel>
-        
-        <div className=" flex justify-center items-center h-1/5" >
+
+        <div className=" flex justify-center items-center h-1/5">
           <Button
             onClick={() => props.setOpenModal("default")}
             className="mx-auto"
+            pill
+            color="dark"
+            theme={{
+              color: {
+                dark: "bg-gray-600",
+              },
+            }}
           >
             Details
           </Button>
