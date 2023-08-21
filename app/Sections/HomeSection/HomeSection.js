@@ -16,6 +16,7 @@ const HomeSection = () => {
                             <li><span>a Computer Scientist</span></li>
                             <li><span>a World Traveler</span></li>
                             <li><span>a Front End Designer</span></li>
+                            <li><span>a Photographer</span></li>
                         </ul>
                     </div>
 
