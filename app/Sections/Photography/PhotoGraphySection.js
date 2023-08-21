@@ -95,12 +95,14 @@ const PhotographySection = () => {
               options={countryList}
               dropdownTitle={"Country"}
               setSelectedOptions={setSelectedCountries}
+              selectedOptions={selectedCountries}
             />
 
             <DropdownMenu
               options={cameraList}
               dropdownTitle={"Camera"}
               setSelectedOptions={setSelectedCameras}
+              selectedOptions={selectedCameras}
             />
 
           </div>

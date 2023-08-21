@@ -27,7 +27,7 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section className="w-full h-screen flex flex-col bg-slate-700" id="portfolio-section">
+    <section className="w-full h-screen flex flex-col " id="portfolio-section">
       
       <div className="mx-32 mt-12 h-full projectContainer rounded-lg">
         {filteredProjects.map((projectIndv) => (
