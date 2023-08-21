@@ -50,7 +50,7 @@ export default function CountriesVisitedSection() {
     fillOpacity: countryValue === '' ? '.6' : '.8',
     stroke: "black",
     strokeWidth: 1,
-    strokeOpacity: 1,
+    strokeOpacity: .2,
     cursor: "pointer",
   });
   
@@ -62,8 +62,8 @@ export default function CountriesVisitedSection() {
     >
       <div>
         <WorldMap
-          tooltipBgColor="rgb(0,0,0,.5)"
-          backgroundColor="transparent"
+          tooltipBgColor="rgb(0,0,0,1)"
+          backgroundColor=""
           size="xxl"
           styleFunction={getStyle}
           data={data}
