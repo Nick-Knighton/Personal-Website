@@ -5,10 +5,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body{
-  
   background: #343F4F;
 }
+
 .wrapper{
   display: flex;
 }
@@ -32,6 +33,8 @@ body{
   top: 0;
   animation: slide 18s steps(6) infinite;
 }
+
+
 @keyframes slide {
   100%{
     top: -540px;

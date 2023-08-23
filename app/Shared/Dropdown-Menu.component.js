@@ -36,13 +36,7 @@ const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTi
     <div>
       <Button
         onClick={() => props.setOpenModal("default")}
-        className="mx-auto my-2 px-16 py-4"
-        color="dark"
-        theme={{
-          color:{
-            dark: "bg-gray-600"
-          }
-        }}
+        className="mx-auto my-2 px-16 py-4 bg-website-blue"
       >
         Filter by: {dropdownTitle}
       </Button>
