@@ -11,9 +11,9 @@ const ProjectCard = ({ project }) => {
   const [openModal, setOpenModal] = useState();
   const props = { openModal, setOpenModal };
   return (
-    <div className="bg-white projectDimensions rounded-lg">
+    <div className="bg-text-white projectDimensions rounded-lg">
       <h1
-        className="text-gray-700 text-xl text-center font-bold flex items-center justify-center"
+        className="text-text-black text-xl text-center font-bold flex items-center justify-center"
         style={{ height: "10%" }}
       >
         {project.title}
@@ -33,15 +33,15 @@ const ProjectCard = ({ project }) => {
             },
             indicators: {
               active: {
-                off: "bg-gray-400 hover:bg-gray-500",
-                on: "bg-gray-700",
+                off: "bg-secondary-gray hover:bg-gray-500",
+                on: "bg-primary-gray",
               },
               base: "h-3 w-3 rounded-full",
               wrapper:
                 "absolute left-1/2 flex -translate-x-1/2 space-x-2 rounded-lg bottom-1",
             },
             control: {
-              base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-black group-hover:bg-white group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+              base: "inline-flex h-8 w-8 items-center justify-center rounded-full bg-secondary-gray group-hover:bg-primary-gray group-focus:outline-none group-focus:ring-4 group-focus:ring-text-white",
               icon: "h-5 w-5 text-black dark:text-gray-800 sm:h-6 sm:w-6 bg-black",
             },
           }}
@@ -64,7 +64,7 @@ const ProjectCard = ({ project }) => {
             color="dark"
             theme={{
               color: {
-                dark: "bg-gray-600",
+                dark: "bg-secondary-gray",
               },
             }}
           >

@@ -2,17 +2,22 @@ import React, { useEffect, useState } from "react";
 
 import { Modal, Button } from "flowbite-react";
 
-const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTitle }) => {
+const DropdownMenu = ({
+  options,
+  setSelectedOptions,
+  selectedOptions,
+  dropdownTitle,
+}) => {
   const [openModal, setOpenModal] = useState();
   const props = { openModal, setOpenModal };
 
   useEffect(() => {
     selectAllOptions();
   }, []);
-  
+
   const handleOptionChange = (e) => {
     const selectedValue = e.target.value;
-    
+
     setSelectedOptions((prevSelectedOptions) => {
       if (prevSelectedOptions.includes(selectedValue)) {
         return prevSelectedOptions.filter((value) => value !== selectedValue);
@@ -21,22 +26,25 @@ const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTi
       }
     });
   };
-  
+
   function deselectAllOptions() {
     setSelectedOptions([]);
   }
-  
+
   function selectAllOptions() {
     setSelectedOptions(options);
   }
-  
-
 
   return (
     <div>
       <Button
         onClick={() => props.setOpenModal("default")}
-        className="mx-auto my-2 px-16 py-4 bg-website-blue"
+        className="mx-auto my-2 px-16 py-4 bg-secondary-gray"
+        theme={{
+          color: {
+            dark: "bg-secondary-gray",
+          },
+        }}
       >
         Filter by: {dropdownTitle}
       </Button>
@@ -58,17 +66,17 @@ const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTi
         </Modal.Header>
 
         <Modal.Body>
-          <div
-            id={dropdownTitle}
-            className="z-10 p-2 w-56 bg-white"
-          >
-            <ul className="space-y-2 text-sm" aria-labelledby={`dropdown${dropdownTitle}`}>
+          <div id={dropdownTitle} className="z-10 p-2 w-56 bg-white">
+            <ul
+              className="space-y-4"
+              aria-labelledby={`dropdown${dropdownTitle}`}
+            >
               {options.map((item) => (
                 <li className="flex items-center" key={item}>
                   <input
                     id={item}
                     type="checkbox"
-                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2"
                     value={item}
                     onChange={handleOptionChange}
                     checked={selectedOptions.includes(item)}
@@ -76,7 +84,7 @@ const DropdownMenu = ({ options, setSelectedOptions, selectedOptions, dropdownTi
 
                   <label
                     htmlFor={item.value}
-                    className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100"
+                    className="ml-2 text-xl font-medium text-text-black"
                   >
                     {item}
                   </label>

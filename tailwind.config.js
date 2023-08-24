@@ -14,8 +14,8 @@ module.exports = {
       'secondary': "#286496",
       'tertiary': "#286496",
 
-      'primary-gray': "#286496",
-      'seconadry-gray': "#286496",
+      'primary-gray': "rgb(87,92,100)",
+      'secondary-gray': "rgb(156,163,175)",
 
       'text-white': "rgb(255,255,255)",
       'text-black': "rgb(0,0,0)",
