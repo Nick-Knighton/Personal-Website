@@ -13,7 +13,9 @@ const DropdownMenu = ({
 
   useEffect(() => {
     selectAllOptions();
-  }, []);
+  },
+  // eslint-disable-next-line
+  []);
 
   const handleOptionChange = (e) => {
     const selectedValue = e.target.value;
