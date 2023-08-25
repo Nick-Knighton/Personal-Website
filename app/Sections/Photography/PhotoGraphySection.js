@@ -69,8 +69,6 @@ const PhotographySection = () => {
     >
       <div className="flex flex-col justify-center h-screen">
         <div className="text-center">
-          <h1>Photography Section</h1>
-
           <div
             className="photo-gallery grid grid-cols-4 gap-4 h-full overflow-auto"
             style={{ width: "100%", height: "75vh" }}

@@ -10,15 +10,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'primary': "#286496",
-      'secondary': "#286496",
+      'primary': "#343F4F",
+      'secondary': "rgb(40,100,150)",
       'tertiary': "#286496",
 
       'primary-gray': "rgb(87,92,100)",
-      'secondary-gray': "rgb(156,163,175)",
+      'secondary-gray': "rgb(175,175,180)",
 
       'text-white': "rgb(255,255,255)",
-      'text-black': "rgb(0,0,0)",
+      'text-black': "#0c0a09",
     },
     extend: {},
   },
