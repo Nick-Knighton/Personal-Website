@@ -13,7 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Analytics>{children}</Analytics>
+          {children}
+        <Analytics/>
       </body>
     </html>
   );
