@@ -1,9 +1,9 @@
 "use client"; // This is a client component
 import React, { useState } from "react";
-import { projects } from "./Projects-Constant";
+import { projects } from "./Projects-Constant.js";
 
 import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
-import ProjectCard from "./Project-Card";
+import ProjectCard from "./Project-Card.js";
 import '../Portfolio/grid.css'
 
 const PortfolioSection = () => {
