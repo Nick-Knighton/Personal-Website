@@ -10,9 +10,6 @@ import '../Portfolio/grid.css'
 const PortfolioSection = () => {
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
 
-  // Options to be passed into the dropdown menu
-  const technologyList = [
-    "Angular",
     "React",
     "C++",
     "Python",
