@@ -7,7 +7,7 @@ const HomeSection = () => {
         <section className="h-screen flex flex-col" id="type-writer-section">
             <div className='flex items-center justify-center h-screen'>
                 <div className='text-center'>
-                    <h1 className='text-6xl font-bold text-text-white'>Hell, I'm</h1>
+                    <h1 className='text-6xl font-bold text-text-white'>Hello, I'm</h1>
 
                     <div className="wrapper">
                         <ul className="dynamic-txts">

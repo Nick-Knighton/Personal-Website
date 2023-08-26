@@ -63,11 +63,8 @@ const PhotographySection = () => {
         });
 
   return (
-    <section
-      className="grid place-content-center min-h-screen"
-      id="photography-section"
-    >
-      <div className="flex flex-col justify-center h-screen">
+    <section className="w-full h-screen flex flex-col" id="photography-section">
+      <div className="mx-32 mt-12 h-full projectContainer rounded-lg">
         <div className="text-center">
           <div
             className="photo-gallery grid grid-cols-4 gap-4 h-full overflow-auto"
@@ -75,15 +72,15 @@ const PhotographySection = () => {
           >
             {filteredPhotos.map((photo) => (
               <div
-                key={photo.id}
+                key={photo.value}
                 className="photo-item flex items-center justify-center rounded-lg"
               >
-                {/* <img
+                <img
                   src={photo.src}
                   alt={`Photo ${photo.id}`}
                   className="max-w-full max-h-full"
                   style={{ maxWidth: "90%", maxHeight: "80%" }}
-                /> */}
+                />
               </div>
             ))}
           </div>
