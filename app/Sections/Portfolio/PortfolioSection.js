@@ -10,6 +10,8 @@ import '../Portfolio/grid.css'
 const PortfolioSection = () => {
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
 
+  const technologyList = [
+    "Angular",
     "React",
     "C++",
     "Python",
