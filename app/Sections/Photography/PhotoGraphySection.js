@@ -65,16 +65,8 @@ const PhotographySection = () => {
   return (
     <section className="w-full h-screen flex flex-col" id="photography-section">
       <div className="mx-32 mt-12 h-full projectContainer rounded-lg">
-        <div className="text-center">
-          <div
-            className="photo-gallery grid grid-cols-4 gap-4 h-full overflow-auto"
-            style={{ width: "100%", height: "75vh" }}
-          >
             {filteredPhotos.map((photo) => (
-              <div
-                key={photo.value}
-                className="photo-item flex items-center justify-center rounded-lg"
-              >
+              <div key={photo.value} className="photo-item flex items-center justify-center rounded-lg" >
                 <img
                   src={photo.src}
                   alt={`Photo ${photo.id}`}
@@ -99,10 +91,9 @@ const PhotographySection = () => {
               setSelectedOptions={setSelectedCameras}
               selectedOptions={selectedCameras}
             />
+            </div>
+      
 
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
