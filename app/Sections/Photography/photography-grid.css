@@ -1,0 +1,31 @@
+.photographyProjectContainer{
+    display: flex;
+    flex-wrap: wrap; /* Items will wrap to the next row */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Start items from the top of each row */
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    gap: 15px
+}
+
+.photographyProjectDimensions{
+    width: auto; 
+    height: calc(50% - 7.5px);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .photographyProjectDimensions{
+        height: calc(33% - 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    .photographyProjectDimensions{
+        height: calc(25% - 10px);
+    }
+}
