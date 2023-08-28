@@ -72,6 +72,7 @@ const PhotographySection = () => {
             src={photo.src}
             alt={`Photo ${photo.id}`}
             className="photographyProjectDimensions"
+            key={photo.src}
           />
         ))}
       </div>
