@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Carousel, Button } from "flowbite-react";
 
 import "./carousel-button.css";
-import "../Portfolio/grid.css";
+import "../Portfolio/portfolio-grid.css";
 
 const ProjectCard = ({ project }) => {
   const [openModal, setOpenModal] = useState();

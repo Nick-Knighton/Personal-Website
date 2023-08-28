@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
 
+import "../Photography/photography-grid.css";
+
 const PhotographySection = () => {
   const [selectedCountries, setSelectedCountries] = useState([]);
   const [selectedCameras, setSelectedCameras] = useState([]);
@@ -63,48 +65,31 @@ const PhotographySection = () => {
         });
 
   return (
-    <section
-      className="grid place-content-center min-h-screen"
-      id="photography-section"
-    >
-      <div className="flex flex-col justify-center h-screen">
-        <div className="text-center">
-          <div
-            className="photo-gallery grid grid-cols-4 gap-4 h-full overflow-auto"
-            style={{ width: "100%", height: "75vh" }}
-          >
-            {filteredPhotos.map((photo) => (
-              <div
-                key={photo.id}
-                className="photo-item flex items-center justify-center rounded-lg"
-              >
-                {/* <img
-                  src={photo.src}
-                  alt={`Photo ${photo.id}`}
-                  className="max-w-full max-h-full"
-                  style={{ maxWidth: "90%", maxHeight: "80%" }}
-                /> */}
-              </div>
-            ))}
-          </div>
+    <section className="w-full h-screen flex flex-col" id="photography-section">
+      <div className="mx-32 mt-12 h-full photographyProjectContainer rounded-lg">
+        {filteredPhotos.map((photo) => (
+          <img
+            src={photo.src}
+            alt={`Photo ${photo.id}`}
+            className="photographyProjectDimensions"
+          />
+        ))}
+      </div>
 
-          <div className="flex justify-center mt-4">
-            <DropdownMenu
-              options={countryList}
-              dropdownTitle={"Country"}
-              setSelectedOptions={setSelectedCountries}
-              selectedOptions={selectedCountries}
-            />
+      <div className="flex justify-center items-center h-1/6">
+        <DropdownMenu
+          options={countryList}
+          dropdownTitle={"Country"}
+          setSelectedOptions={setSelectedCountries}
+          selectedOptions={selectedCountries}
+        />
 
-            <DropdownMenu
-              options={cameraList}
-              dropdownTitle={"Camera"}
-              setSelectedOptions={setSelectedCameras}
-              selectedOptions={selectedCameras}
-            />
-
-          </div>
-        </div>
+        <DropdownMenu
+          options={cameraList}
+          dropdownTitle={"Camera"}
+          setSelectedOptions={setSelectedCameras}
+          selectedOptions={selectedCameras}
+        />
       </div>
     </section>
   );
