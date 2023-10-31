@@ -5,7 +5,6 @@
   import PortfolioSection from './Sections/Portfolio/PortfolioSection';
   import PhotographySection from './Sections/Photography/PhotoGraphySection';
   import CountriesVisitedSection from './Sections/CountriesVisited/CountriesVisitedSection';
-  import ResumeSection from './Sections/Resume/ResumeSection';
 
 
   export default function Home() {
@@ -15,7 +14,6 @@
         <PortfolioSection/>
         <PhotographySection/>
         <CountriesVisitedSection/>
-        <ResumeSection/> 
       </div>
     )
   }

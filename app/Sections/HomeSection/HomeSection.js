@@ -1,44 +1,66 @@
-import React from "react";
-import Link from "next/link";
-import "./typeWriter.css"
+"use client"; // This is a client component
+import React, {useEffect} from "react";
+import Typed from 'typed.js';
+
+import "../HomeSection/style.css";
+// import "../../../public/Resume.pdf"
 
 const HomeSection = () => {
+    useEffect(() => {
+        const typingEffect = new Typed(".typedText", {
+            strings: ["Designer", "Youtuber", "Developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 2000
+        });
+
+        return () => {
+            typingEffect.destroy();
+        };
+    }, []); 
+
     return (
-        <section className="h-screen flex flex-col" id="type-writer-section">
-            <div className='flex items-center justify-center h-screen'>
-                <div className='text-center'>
-                    <h1 className='text-6xl font-bold text-text-white'>Hello, I'm</h1>
-
-                    <div className="wrapper">
-                        <ul className="dynamic-txts">
-                            <li><span>Nick Knighton</span></li>
-                            <li><span>a Software Engineer</span></li>
-                            <li><span>a Computer Scientist</span></li>
-                            <li><span>a World Traveler</span></li>
-                            <li><span>a Front End Designer</span></li>
-                            <li><span>a Photographer</span></li>
-                        </ul>
+        <section className="h-screen flex items-center" id="type-writer-section">
+            <head>
+                <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="..."/>
+            </head>
+            <div className="flex items-center bg-white rounded-lg mx-auto overflow-hidden">
+                <div className="featured-text py-4 pl-8 bg-white">
+                    <div class="featured-text-card">
+                        <span>Nick Knighton</span>
                     </div>
-
-                    <div className="flex justify-center space-x-6 mt-8">
-                    <Link href="#portfolio-section" className="py-2 px-4 border border-transparent rounded-md text-lg font-medium text-text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tertiary">
-                        Portfolio
-                    </Link>
-                    <Link href="#photography-section" className="py-2 px-4 border border-transparent rounded-md text-lg font-medium text-text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tertiary">
-                        Photography
-                    </Link>
-                    <Link href="#visited-countries-section" className="py-2 px-4 border border-transparent rounded-md text-lg font-medium text-text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tertiary">
-                        Countries Visited
-                    </Link>
-                    <Link href="#resume-section" className="py-2 px-4 border border-transparent rounded-md text-lg font-medium text-text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tertiary">
-                        Resume
-                    </Link>
+                    <div class="featured-name">
+                        <p>I'm a <span class="typedText"></span></p>
                     </div>
-
-                 </div>
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning
+                            and user-friendly websites.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <a href="Resume.pdf" download>
+                            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                        </a>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"> <a href="https://www.instagram.com/nickmknighton/"> <i class="uil uil-instagram"></i></a></div>
+                        <div class="icon"> <a href="https://www.youtube.com/@nickmknighton"> <i class="uil uil-youtube"></i></a></div>
+                        <div class="icon"> <a href="https://www.tiktok.com/@nickmknighton"> <i class="fa-brands fa-tiktok"></i></a></div>
+                        <div class="icon"> <a href="https://www.linkedin.com/in/nicholas-knighton-a3491821b/"> <i class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"> <a href="https://github.com/Nick-Knighton"> <i class="uil uil-github-alt"></i> </a> </div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="/Photos/headshot.png" alt="avatar"/>
+                    </div>
+                </div>
             </div>
+                
         </section>
-    )
-}
+  );
+};
 
 export default HomeSection;

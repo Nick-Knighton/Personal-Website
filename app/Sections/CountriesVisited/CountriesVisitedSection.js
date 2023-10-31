@@ -31,6 +31,7 @@ export default function CountriesVisitedSection() {
     { country: "JM", value: "" }, // Jamaica
     { country: "MX", value: "" }, // Mexico
     { country: "US", value: "" }, // USA
+    { country: "GT", value: "" }, // Guatemala 
     
 
     { country: "FJ", value: "" }, // Fiji
