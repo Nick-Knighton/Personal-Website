@@ -13,7 +13,7 @@
         <HomeSection/>
         <PortfolioSection/>
         <PhotographySection/>
-        <CountriesVisitedSection/>
+        {/* <CountriesVisitedSection/> */}
       </div>
     )
   }

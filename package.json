@@ -11,6 +11,7 @@
   "dependencies": {
     "@material-tailwind/html": "^2.0.0",
     "@material-tailwind/react": "^2.0.3",
+    "@supabase/supabase-js": "^2.38.4",
     "@vercel/analytics": "^1.0.2",
     "country-list": "^2.3.0",
     "eslint": "8.40.0",
@@ -24,6 +25,7 @@
     "react-select": "^5.7.3",
     "react-svg-worldmap": "^2.0.0-alpha.16",
     "scrollreveal": "^4.0.9",
+    "supabase": "^1.110.1",
     "typed.js": "^2.0.16"
   },
   "devDependencies": {
