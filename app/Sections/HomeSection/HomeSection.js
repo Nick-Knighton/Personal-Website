@@ -54,7 +54,7 @@ const HomeSection = () => {
                 </div>
                 <div className="featured-image">
                     <div className="image">
-                        <img src="/Photos/headshot.png" alt="avatar"/>
+                        <img src="/headshot.png" alt="avatar"/>
                     </div>
                 </div>
             </div>

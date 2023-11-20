@@ -5,59 +5,14 @@ import DropdownMenu from "@/app/Shared/Dropdown-Menu.component";
 import { supabase } from '../../../utils/supabaseConnections';
 
 import "../Photography/photography-grid.css";
-import { data } from "autoprefixer";
 
 
 const PhotographySection = () => {
-  const [selectedCountries, setSelectedCountries] = useState([]);
-  const [selectedCameras, setSelectedCameras] = useState([]);
-  const [countryList, setCountryList] = useState([]);
-  const [cameraList, setCameraList] = useState([]);
-
-  // const countryList = ["Greece"]
-  // const cameraList = ["Samsung S8+"];
-  
-
-  const photos = [
-    {
-      value: 1,
-      src: "/Photos/DSC03617.JPG",
-      country: "USA",
-      camera: "Sony A7iii",
-    },
-    {
-      value: 2,
-      src: "/Photos/DSC03794.JPG",
-      country: "Canada",
-      camera: "Sony A7iii",
-    },
-    {
-      value: 3,
-      src: "/Photos/DSC03823.JPG",
-      country: "France",
-      camera: "Sony A7iii",
-    },
-    {
-      value: 4,
-      src: "/Photos/DSC03869.JPG",
-      country: "USA",
-      camera: "Sony A7iii",
-    },
-    {
-      value: 5,
-      src: "/Photos/DSC04091.JPG",
-      country: "Canada",
-      camera: "GoPro Max",
-    },
-    {
-      value: 6,
-      src: "/Photos/DSC04120.JPG",
-      country: "France",
-      camera: "Insta360 ONER",
-    },
-  ];
-
-  const [supabasePhotos, setSupabasePhotos] = useState([]);
+  const [selectedCountries, setSelectedCountries] = useState([]); //Options selected for countries
+  const [selectedCameras, setSelectedCameras] = useState([]); //Options selected for cameras
+  const [countryList, setCountryList] = useState([]); //Unique countries
+  const [cameraList, setCameraList] = useState([]); //Unique cameras
+  const [supabasePhotos, setSupabasePhotos] = useState([]); //Photos that are currently being displayed
 
   //Fetch photos from DB
   useEffect(() => {
@@ -75,56 +30,41 @@ const PhotographySection = () => {
         }
 
         setSupabasePhotos(data || []);
-      } catch (error) {
+      } 
+      catch (error) {
         console.error("Error fetching Supabase photos:", error.message);
       }
     };
     
     const fetchUniqueEntries = async () => {
       // Fetch unique countries
-      const { data: uniqueCountriesData, error: countriesError } = await supabase
-        .from('distinct_country')
-        .select();
+      const { data: uniqueCountriesData, error: countriesError } = await supabase.from('distinct_country').select();
       
       if (countriesError) {
         console.error('Error fetching unique countries:', countriesError);
-      } else {
+      } 
+      else {
         const countries = uniqueCountriesData.map(entry => entry.Country);
         setCountryList(countries);
       }
-      console.log(countryList)
 
       // Fetch unique cameras
-      const { data: uniqueCamerasData, error: camerasError } = await supabase
-        .from('distinct_camera')
-        .select();
+      const { data: uniqueCamerasData, error: camerasError } = await supabase.from('distinct_camera').select();
 
       if (camerasError) {
         console.error('Error fetching unique cameras:', camerasError);
-      } else {
+      } 
+      else {
         const cameras = uniqueCamerasData.map(entry => entry.Camera);
         setCameraList(cameras);
       }
-
-      console.log(cameraList);
     };
 
     fetchSupabasePhotos();
     fetchUniqueEntries();
   }, [selectedCountries, selectedCameras]);
 
-  const filteredPhotos =
-    selectedCountries.length === 0 || selectedCameras.length === 0
-      ? [] // Return all photos if no filters are applied
-      : photos.filter((photo) => {
-          const matchesCountries =
-            selectedCountries.length === 0 ||
-            selectedCountries.includes(photo.country);
-          const matchesCameras =
-            selectedCameras.length === 0 ||
-            selectedCameras.includes(photo.camera);
-          return matchesCountries && matchesCameras;
-        });
+  
 
   return (
     <section className="w-full h-screen flex flex-col" id="photography-section">
@@ -132,7 +72,7 @@ const PhotographySection = () => {
         {supabasePhotos.map((photo) => (
           <img
           src={photo["Image URL"]} // Use the correct property name for the image URL
-          alt={`Photo ${photo.id}`}
+          alt={photo["Image URL"]}
           className="photographyProjectDimensions"
           key={photo["Image URL"]} // Use a unique identifier for the key
         />
