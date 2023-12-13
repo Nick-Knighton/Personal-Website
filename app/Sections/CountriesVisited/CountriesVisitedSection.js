@@ -57,7 +57,7 @@ export default function CountriesVisitedSection() {
   
 
   return (
-    <section className="w-full h-screen flex items-center justify-center" id="visited-countries-section">
+    <section className="sm:w-full h-screen flex items-center justify-center overflow-hidden" id="visited-countries-section">
         <WorldMap
           tooltipBgColor="rgb(0,0,0,1)"
           backgroundColor=""
@@ -65,7 +65,7 @@ export default function CountriesVisitedSection() {
           styleFunction={getStyle}
           data={data}
           richInteraction
-        />
+          />
     </section>
   );
 }

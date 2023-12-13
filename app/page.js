@@ -9,7 +9,7 @@
 
   export default function Home() {
     return (
-      <div className="flex flex-col bg-primary">
+      <div className="flex flex-col bg-primary max-w-screen">
         <HomeSection/>
         <PortfolioSection/>
         <PhotographySection/>
