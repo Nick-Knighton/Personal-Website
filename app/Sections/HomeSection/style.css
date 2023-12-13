@@ -61,7 +61,7 @@ i{
 .featured-text-card span{
     background: var(--third-color);
     color: var(--color-white);
-    padding: 3px 8px;
+    padding: 3px 3px;
     font-size: 12px;
     border-radius: 5px;
 }
@@ -116,15 +116,11 @@ i{
     justify-content: right;
     align-content: center;
     margin-bottom: -5px;
-    /* width: 40%; */
 }
 .image{
     margin: auto 0;
-    /* width: 380px; */
-    /* height: 500px; */
 }
 .image img{
-    /* width: 380px; */
     height: 550px;
     object-fit: contain;
 }
@@ -132,7 +128,10 @@ i{
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
-        padding: 0;
+        padding: 10px;
+    }
+    .featured-text-info{
+        margin-bottom: 10px;
     }
     .image, .image img{
         width: 320px;
@@ -143,18 +142,17 @@ i{
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .social_icons{
-        margin-top: 2em;
+        margin-top: 10px;
     }
     .featured-image{
         order: 1;
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-bottom: 0px;
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 100%;
     }
     .row{
         display: flex;
@@ -184,6 +182,7 @@ i{
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
+        margin-block: 10px;
     }
     .project-box{
         width: 100%;

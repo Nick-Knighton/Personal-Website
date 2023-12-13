@@ -29,7 +29,7 @@ const PortfolioSection = () => {
   return (
     <section className="w-full h-screen flex flex-col " id="portfolio-section">
       
-      <div className="mx-32 mt-12 h-full projectContainer rounded-lg">
+      <div className=" mx-4 sm:mx-32 mt-12 h-full projectContainer rounded-lg">
         {filteredProjects.map((projectIndv) => (
           <ProjectCard project={projectIndv} key={projectIndv.title}></ProjectCard>
         ))} 

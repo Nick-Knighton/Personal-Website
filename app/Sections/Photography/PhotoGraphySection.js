@@ -68,7 +68,7 @@ const PhotographySection = () => {
 
   return (
     <section className="w-full h-screen flex flex-col" id="photography-section">
-      <div className="mx-32 mt-12 h-full photographyProjectContainer rounded-lg">
+      <div className="mx-4 sm:mx-32 mt-12 h-full photographyProjectContainer rounded-lg">
         {supabasePhotos.map((photo) => (
           <img
           src={photo["Image URL"]} // Use the correct property name for the image URL
