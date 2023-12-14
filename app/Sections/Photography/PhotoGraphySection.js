@@ -10,8 +10,8 @@ import "../Photography/photography-grid.css";
 const PhotographySection = () => {
   const [selectedCountries, setSelectedCountries] = useState([]); //Options selected for countries
   const [selectedCameras, setSelectedCameras] = useState([]); //Options selected for cameras
-  const [countryList, setCountryList] = useState([]); //Unique countries
-  const [cameraList, setCameraList] = useState([]); //Unique cameras
+  const [countryList, setCountryList] = useState(["Guatemala"]); //Unique countries
+  const [cameraList, setCameraList] = useState(["Sony A7III"]); //Unique cameras
   const [supabasePhotos, setSupabasePhotos] = useState([]); //Photos that are currently being displayed
 
   //Fetch photos from DB

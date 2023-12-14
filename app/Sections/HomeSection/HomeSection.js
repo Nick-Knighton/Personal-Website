@@ -8,7 +8,7 @@ import "../HomeSection/style.css";
 const HomeSection = () => {
     useEffect(() => {
         const typingEffect = new Typed(".typedText", {
-            strings: ["Designer", "Youtuber", "Developer"],
+            strings: ["Designer", "Youtuber", "Developer", "Photographer"],
             loop: true,
             typeSpeed: 100,
             backSpeed: 80,
