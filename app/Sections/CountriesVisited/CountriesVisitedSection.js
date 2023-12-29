@@ -57,7 +57,8 @@ export default function CountriesVisitedSection() {
   
 
   return (
-    <section className="sm:w-full h-screen flex items-center justify-center overflow-hidden" id="visited-countries-section">
+    <section className="sm:w-full h-screen flex items-center justify-center flex-col overflow-hidden" id="visited-countries-section">
+      <h1 className="text-white mb-4 sm:mb-0 text-2xl sm:text-4xl font-bold">Countries I have Visited</h1>
         <WorldMap
           tooltipBgColor="rgb(0,0,0,1)"
           backgroundColor=""

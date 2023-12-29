@@ -24,7 +24,7 @@ const HomeSection = () => {
         <section className="h-screen flex items-center" id="type-writer-section">
             <head>
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="..."/>
+                {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="..."/> */}
             </head>
             <div className="flex items-center sm:flex-row flex-col-reverse bg-white rounded-lg sm:mx-auto mx-4 overflow-hidden">
                 <div className="featured-text py-4 pl-8 bg-white ">
@@ -47,7 +47,7 @@ const HomeSection = () => {
                     <div className="social_icons">
                         <div className="icon"> <a href="https://www.instagram.com/nickmknighton/"> <i className="uil uil-instagram"></i></a></div>
                         <div className="icon"> <a href="https://www.youtube.com/@nickmknighton"> <i className="uil uil-youtube"></i></a></div>
-                        <div className="icon"> <a href="https://www.tiktok.com/@nickmknighton"> <i className="fa-brands fa-tiktok"></i></a></div>
+                        <div className="icon"> <a href="https://www.tiktok.com/@nickmknighton"> <img src="tiktok.svg" alt="TikTok Icon"/></a></div>
                         <div className="icon"> <a href="https://www.linkedin.com/in/nicholas-knighton-a3491821b/"> <i className="uil uil-linkedin-alt"></i></a></div>
                         <div className="icon"> <a href="https://github.com/Nick-Knighton"> <i className="uil uil-github-alt"></i> </a> </div>
                     </div>
