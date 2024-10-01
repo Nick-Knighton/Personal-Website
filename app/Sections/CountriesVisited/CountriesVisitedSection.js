@@ -6,7 +6,19 @@ import WorldMap from "react-svg-worldmap";
 export default function CountriesVisitedSection() {
   const data = [
     //Asia
-    { country: "TW", value: "" }, // Vanuatu
+    { country: "TW", value: "" }, // Taiwan 
+    { country: "IN", value: "" }, // India
+    { country: "VN", value: "" }, // Vietnam
+    { country: "KH", value: "" }, // Cambodia
+    { country: "TH", value: "" }, // Thailand
+    { country: "LA", value: "" }, // Laos
+    { country: "NP", value: "" }, // Nepal
+    { country: "PH", value: "" }, // Philippines
+    { country: "JP", value: "" }, // Japan
+    { country: "MY", value: "" }, // Malaysia
+    { country: "SG", value: "" }, // Singapore
+    { country: "ID", value: "" }, // Indonesia
+
 
     //Africa
     { country: "EG", value: "" }, // Egypt
@@ -33,7 +45,7 @@ export default function CountriesVisitedSection() {
     { country: "US", value: "" }, // USA
     { country: "GT", value: "" }, // Guatemala 
     
-
+    //Oceania
     { country: "FJ", value: "" }, // Fiji
     { country: "NC", value: "" }, // New Caledonia
     { country: "VU", value: "" }, // Vanuatu
