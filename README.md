@@ -27,7 +27,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/Nick-Knighton/Personal-Website 
+git clone https://github.com/your-username/your-portfolio.git
 cd your-portfolio
 Install dependencies:
 
@@ -43,7 +43,12 @@ Run the development server:
 bash
 Copy code
 npm run dev
-The website will be accessible at https://www.nickmknighton.com/
+The website will be accessible at http://localhost:3000.
 
 🎨 Customization
 Feel free to explore the code and make any adjustments to the styling, layout, and features to suit your own preferences. Tailwind CSS and modular Next.js components make customization easy.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Thank you for checking out my portfolio! Explore the live site here and feel free to connect with me on social media!
