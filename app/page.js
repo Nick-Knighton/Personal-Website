@@ -7,7 +7,6 @@
   import PortfolioSection from './Sections/Portfolio/PortfolioSection';
   import PhotographySection from './Sections/Photography/PhotoGraphySection';
   import CountriesVisitedSection from './Sections/CountriesVisited/CountriesVisitedSection';
-  import ResumeSection from './Sections/Resume/ResumeSection';
   import { useState } from 'react';
 
 
@@ -18,7 +17,6 @@
       { label: 'Portfolio', component: <PortfolioSection /> },
       { label: 'Photography', component: <PhotographySection /> },
       { label: 'Countries Visited', component: <CountriesVisitedSection /> },
-      { label: 'Resume', component: <ResumeSection /> },
     ];
 
     return (

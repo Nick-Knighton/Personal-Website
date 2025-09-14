@@ -67,19 +67,19 @@ const PhotographySection = () => {
   
 
   return (
-    <section className="w-full h-screen flex flex-col" id="photography-section">
-      <div className="mx-4 sm:mx-32 mt-12 h-full photographyProjectContainer rounded-lg">
+    <section className="w-full my-16 flex-grow flex items-center flex-col" id="photography-section">
+      <div className="mx-4 h-1/2 sm:mx-32 mt-12 photographyProjectContainer rounded-lg">
         {supabasePhotos.map((photo) => (
           <img
-          src={photo["Image URL"]} // Use the correct property name for the image URL
-          alt={photo["Image URL"]}
-          className="photographyProjectDimensions"
-          key={photo["Image URL"]} // Use a unique identifier for the key
+            src={photo["Image URL"]} // Use the correct property name for the image URL
+            alt={photo["Image URL"]}
+            className="image-dimensions"
+            key={photo["Image URL"]} // Use a unique identifier for the key
         />
         ))}
       </div>
 
-      <div className="flex justify-center items-center h-1/6">
+      <div className="flex justify-center items-center h-1/8">
         <DropdownMenu
           options={countryList}
           dropdownTitle={"Country"}

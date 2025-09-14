@@ -27,7 +27,7 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section className="w-full flex flex-col" id="portfolio-section" style={{height: '100vh'}}>
+    <section className="w-full flex flex-col" id="portfolio-section">
       <div className="flex-1 flex flex-col mx-32 mt-12 projectContainer rounded-lg" style={{minHeight: 0}}>
         {filteredProjects.map((projectIndv) => (
           <ProjectCard project={projectIndv} key={projectIndv.title}></ProjectCard>
