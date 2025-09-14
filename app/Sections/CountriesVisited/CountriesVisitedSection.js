@@ -6,7 +6,19 @@ import WorldMap from "react-svg-worldmap";
 export default function CountriesVisitedSection() {
   const data = [
     //Asia
-    { country: "TW", value: "" }, // Vanuatu
+    { country: "TW", value: "" }, // Taiwan 
+    { country: "IN", value: "" }, // India
+    { country: "VN", value: "" }, // Vietnam
+    { country: "KH", value: "" }, // Cambodia
+    { country: "TH", value: "" }, // Thailand
+    { country: "LA", value: "" }, // Laos
+    { country: "NP", value: "" }, // Nepal
+    { country: "PH", value: "" }, // Philippines
+    { country: "JP", value: "" }, // Japan
+    { country: "MY", value: "" }, // Malaysia
+    { country: "SG", value: "" }, // Singapore
+    { country: "ID", value: "" }, // Indonesia
+
 
     //Africa
     { country: "EG", value: "" }, // Egypt
@@ -23,7 +35,8 @@ export default function CountriesVisitedSection() {
     { country: "ME", value: "" }, // Montenegro
     { country: "UK", value: "" }, // UK
     { country: "VA", value: "" }, // Vatican City
-    { country: "RU", value: "" }, // Vatican City
+    { country: "RU", value: "" }, // Russia
+    { country: "CH", value: "" }, // Switzerland
     
     //North America
     { country: "BS", value: "" }, // Bahamas
@@ -31,8 +44,9 @@ export default function CountriesVisitedSection() {
     { country: "JM", value: "" }, // Jamaica
     { country: "MX", value: "" }, // Mexico
     { country: "US", value: "" }, // USA
+    { country: "GT", value: "" }, // Guatemala 
     
-
+    //Oceania
     { country: "FJ", value: "" }, // Fiji
     { country: "NC", value: "" }, // New Caledonia
     { country: "VU", value: "" }, // Vanuatu
@@ -56,11 +70,8 @@ export default function CountriesVisitedSection() {
   
 
   return (
-    <section
-      className="grid place-content-center min-h-screen"
-      id="visited-countries-section"
-    >
-      <div>
+    <section className="sm:w-full h-screen flex items-center justify-center flex-col overflow-hidden" id="visited-countries-section">
+      <h1 className="text-white mb-4 sm:mb-0 text-2xl sm:text-4xl font-bold">Countries I have Visited</h1>
         <WorldMap
           tooltipBgColor="rgb(0,0,0,1)"
           backgroundColor=""
@@ -68,8 +79,7 @@ export default function CountriesVisitedSection() {
           styleFunction={getStyle}
           data={data}
           richInteraction
-        />
-      </div>
+          />
     </section>
   );
 }

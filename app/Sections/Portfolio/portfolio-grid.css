@@ -1,0 +1,25 @@
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    gap: 15px;
+}
+
+.projectDimensions{
+    width: calc(33.33333333% - 10px);
+    height: calc(50% - 7.5px);
+}
+
+@media (max-width: 1000px) {
+    .projectDimensions{
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    .projectDimensions{
+        width: calc(100% - 10px);
+    }
+}
