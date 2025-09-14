@@ -8,8 +8,8 @@ import "../Photography/photography-grid.css";
 
 
 const PhotographySection = () => {
-  const [selectedCountries, setSelectedCountries] = useState([]); //Options selected for countries
-  const [selectedCameras, setSelectedCameras] = useState([]); //Options selected for cameras
+  const [selectedCountries, setSelectedCountries] = useState(["Guatemala"]); //Options selected for countries
+  const [selectedCameras, setSelectedCameras] = useState(["Sony A7III"]); //Options selected for cameras
   const [countryList, setCountryList] = useState(["Guatemala"]); //Unique countries
   const [cameraList, setCameraList] = useState(["Sony A7III"]); //Unique cameras
   const [supabasePhotos, setSupabasePhotos] = useState([]); //Photos that are currently being displayed
@@ -67,7 +67,7 @@ const PhotographySection = () => {
   
 
   return (
-    <section className="w-full my-16 flex-grow flex items-center flex-col" id="photography-section">
+    <section className="w-full flex-grow flex items-center justify-center flex-col" id="photography-section">
       <div className="mx-4 h-1/2 sm:mx-32 mt-12 photographyProjectContainer rounded-lg">
         {supabasePhotos.map((photo) => (
           <img
