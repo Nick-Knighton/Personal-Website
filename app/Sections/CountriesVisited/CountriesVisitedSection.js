@@ -35,7 +35,8 @@ export default function CountriesVisitedSection() {
     { country: "ME", value: "" }, // Montenegro
     { country: "UK", value: "" }, // UK
     { country: "VA", value: "" }, // Vatican City
-    { country: "RU", value: "" }, // Vatican City
+    { country: "RU", value: "" }, // Russia
+    { country: "CH", value: "" }, // Switzerland
     
     //North America
     { country: "BS", value: "" }, // Bahamas
