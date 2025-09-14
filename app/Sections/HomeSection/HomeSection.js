@@ -4,9 +4,9 @@ import "./typeWriter.css"
 
 const HomeSection = () => {
     return (
-        <section className="h-screen flex flex-col" id="type-writer-section">
-            <div className='flex items-center justify-center h-screen'>
-                <div className='text-center'>
+    <section className="h-full w-full flex flex-col" id="type-writer-section">
+        <div className='flex-1 flex items-center justify-center'>
+                <div className='content-section text-center'>
                     <h1 className='text-6xl font-bold text-text-white'>Hello, I'm</h1>
 
                     <div className="wrapper">
@@ -35,7 +35,7 @@ const HomeSection = () => {
                     </Link>
                     </div>
 
-                 </div>
+                </div>
             </div>
         </section>
     )

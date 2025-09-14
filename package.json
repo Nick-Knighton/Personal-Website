@@ -22,7 +22,8 @@
     "react-dom": "18.2.0",
     "react-jvectormap": "^0.0.16",
     "react-select": "^5.7.3",
-    "react-svg-worldmap": "^2.0.0-alpha.16"
+    "react-svg-worldmap": "^2.0.0-alpha.16",
+    "sass": "^1.92.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

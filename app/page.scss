@@ -1,0 +1,30 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header-section{
+    background-color: rgb(31 41 55); /* Tailwind's bg-gray-800 */
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+
+    height: 4rem;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column ;
+}
