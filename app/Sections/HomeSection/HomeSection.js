@@ -45,11 +45,11 @@ const HomeSection = () => {
                         </a>
                     </div>
                     <div className="social_icons">
-                        <div className="icon"> <a href="https://www.instagram.com/nickmknighton/"> <i className="uil uil-instagram"></i></a></div>
-                        <div className="icon"> <a href="https://www.youtube.com/@nickmknighton"> <i className="uil uil-youtube"></i></a></div>
-                        <div className="icon"> <a href="https://www.tiktok.com/@nickmknighton"> <img src="tiktok.svg" alt="TikTok Icon"/></a></div>
-                        <div className="icon"> <a href="https://www.linkedin.com/in/nicholas-knighton-a3491821b/"> <i className="uil uil-linkedin-alt"></i></a></div>
-                        <div className="icon"> <a href="https://github.com/Nick-Knighton"> <i className="uil uil-github-alt"></i> </a> </div>
+                        <div className="icon"> <a href="https://www.instagram.com/nickmknighton/" target="_blank" rel="noopener noreferrer"> <i className="uil uil-instagram"></i></a></div>
+                        <div className="icon"> <a href="https://www.youtube.com/@nickmknighton" target="_blank" rel="noopener noreferrer"> <i className="uil uil-youtube"></i></a></div>
+                        <div className="icon"> <a href="https://www.tiktok.com/@nickmknighton" target="_blank" rel="noopener noreferrer"> <img src="tiktok.svg" alt="TikTok Icon"/></a></div>
+                        <div className="icon"> <a href="https://www.linkedin.com/in/nicholas-knighton-a3491821b/" target="_blank" rel="noopener noreferrer"> <i className="uil uil-linkedin-alt"></i></a></div>
+                        <div className="icon"> <a href="https://github.com/Nick-Knighton" target="_blank" rel="noopener noreferrer"> <i className="uil uil-github-alt"></i> </a> </div>
                     </div>
                 </div>
                 <div className="featured-image">
