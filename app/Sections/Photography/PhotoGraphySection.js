@@ -8,8 +8,8 @@ import "../Photography/photography-grid.css";
 
 
 const PhotographySection = () => {
-  const [selectedCountries, setSelectedCountries] = useState([]); //Options selected for countries
-  const [selectedCameras, setSelectedCameras] = useState([]); //Options selected for cameras
+  const [selectedCountries, setSelectedCountries] = useState(["Guatemala"]); //Options selected for countries
+  const [selectedCameras, setSelectedCameras] = useState(["Sony A7III"]); //Options selected for cameras
   const [countryList, setCountryList] = useState(["Guatemala"]); //Unique countries
   const [cameraList, setCameraList] = useState(["Sony A7III"]); //Unique cameras
   const [supabasePhotos, setSupabasePhotos] = useState([]); //Photos that are currently being displayed
@@ -67,19 +67,19 @@ const PhotographySection = () => {
   
 
   return (
-    <section className="w-full h-screen flex flex-col" id="photography-section">
-      <div className="mx-4 sm:mx-32 mt-12 h-full photographyProjectContainer rounded-lg">
+    <section className="w-full h-full flex items-center justify-center flex-col sm:mt-0 mt-4" id="photography-section">
+      <div className="mx-4 h-full sm:mx-32 mt-12 photographyProjectContainer rounded-lg">
         {supabasePhotos.map((photo) => (
           <img
-          src={photo["Image URL"]} // Use the correct property name for the image URL
-          alt={photo["Image URL"]}
-          className="photographyProjectDimensions"
-          key={photo["Image URL"]} // Use a unique identifier for the key
+            src={photo["Image URL"]} // Use the correct property name for the image URL
+            alt={photo["Image URL"]}
+            className="image-dimensions"
+            key={photo["Image URL"]} // Use a unique identifier for the key
         />
         ))}
       </div>
 
-      <div className="flex justify-center items-center h-1/6">
+      <div className="flex items-center justify-center mt-4 h-1/8">
         <DropdownMenu
           options={countryList}
           dropdownTitle={"Country"}

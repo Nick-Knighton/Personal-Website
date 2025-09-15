@@ -1,25 +1,32 @@
+.portfolio-section {
+    height: 100%;
+}
+
 .projectContainer{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: auto;
 
     gap: 15px;
+    width: 100%;
+    height: 100%;
 }
 
-.projectDimensions{
-    width: calc(33.33333333% - 10px);
+.project-dimensions{
+    width: calc(33% - 10px);
     height: calc(50% - 7.5px);
 }
 
 @media (max-width: 1000px) {
-    .projectDimensions{
+    .project-dimensions{
         width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 750px) {
-    .projectDimensions{
+    .project-dimensions{
         width: calc(100% - 10px);
     }
 }

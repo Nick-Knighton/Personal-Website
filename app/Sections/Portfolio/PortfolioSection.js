@@ -27,15 +27,14 @@ const PortfolioSection = () => {
         );
 
   return (
-    <section className="w-full h-screen flex flex-col " id="portfolio-section">
-      
-      <div className=" mx-4 sm:mx-32 mt-12 h-full projectContainer rounded-lg">
+    <section className="portfolio-section sm:mt-0 mt-4 w-full flex flex-col" id="portfolio-section">
+      <div className="flex-1 flex flex-col projectContainer rounded-lg" style={{minHeight: 0}}>
         {filteredProjects.map((projectIndv) => (
           <ProjectCard project={projectIndv} key={projectIndv.title}></ProjectCard>
-        ))} 
+        ))}
       </div>
 
-      <div className="flex items-center justify-center h-1/6">
+      <div className="flex items-center justify-center mt-4 h-1/8">
         <DropdownMenu
           options={technologyList}
           dropdownTitle="Technology"

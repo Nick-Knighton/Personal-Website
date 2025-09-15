@@ -11,6 +11,7 @@ const ProjectModal = ({ project, props }) => {
       size={"3xl"}
       position={"center"}
       onClose={() => props.setOpenModal(undefined)}
+      className="z-50"
     >
       <Modal.Header
         theme={{

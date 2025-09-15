@@ -8,7 +8,7 @@ import "../HomeSection/style.css";
 const HomeSection = () => {
     useEffect(() => {
         const typingEffect = new Typed(".typedText", {
-            strings: ["Designer", "Youtuber", "Developer", "Photographer"],
+            strings: ["Designer", "Creator", "Developer", "Photographer"],
             loop: true,
             typeSpeed: 100,
             backSpeed: 80,
@@ -21,12 +21,11 @@ const HomeSection = () => {
     }, []); 
 
     return (
-        <section className="h-screen flex items-center" id="type-writer-section">
-            <head>
+        <section className="h-4 flex items-center" id="type-writer-section">
+            <div>
                 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
-                {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="..."/> */}
-            </head>
-            <div className="flex items-center sm:flex-row flex-col-reverse bg-white rounded-lg sm:mx-auto mx-4 overflow-hidden">
+            </div>
+            <div className="flex items-center sm:flex-row flex-col-reverse bg-white rounded-lg overflow-hidden">
                 <div className="featured-text py-4 pl-8 bg-white ">
                     <div className="featured-text-card">
                         <span>Nick Knighton</span>

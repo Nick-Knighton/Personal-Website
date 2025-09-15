@@ -1,0 +1,188 @@
+.app-container{
+    background-color: rgb(52 63 79); /* Tailwind's bg-gray-100 */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+.header-section{
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+
+    height: 4rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column ;
+
+    padding: 50px 30px 50px 30px;
+    min-height: 0; // allow children to use 100% height
+    height: 100%;  // fill available space
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
+    transition: color 0.2s;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: rgb(30,159,171); // blue-500
+        transition: width 0.2s;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.tab-btn.active {
+    color: rgb(30,159,171);
+}
+
+.tab-btn.active::after {
+    width: 100%;
+    background: rgb(30,159,171);
+}
+
+// Sidebar toggle (hamburger) button
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 1.2rem;
+    left: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    z-index: 49;
+    cursor: pointer;
+    padding: 0;
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.sidebar-toggle-bar {
+    width: 2rem;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+// Sidebar menu
+.sidebar-menu {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background: rgba(30, 40, 50, 0.98);
+        overflow: hidden;
+        z-index: 48;
+        transition: width 0.3s;
+        pointer-events: none;
+    }
+}
+
+.sidebar-menu.open {
+    @media (max-width: 768px) {
+        width: 220px;
+        pointer-events: auto;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    }
+}
+
+.sidebar-menu-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.sidebar-tab-btn {
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 0;
+    transition: color 0.2s;
+
+    &.active {
+        color: rgb(30,159,171);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: rgb(30,159,171);
+        transition: width 0.2s;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+    }
+
+    &:hover::after,
+    &.active::after {
+        width: 100%;
+    }
+}
+
+.worldmap__figure-container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
