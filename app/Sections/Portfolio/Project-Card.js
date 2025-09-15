@@ -11,15 +11,14 @@ const ProjectCard = ({ project }) => {
   const [openModal, setOpenModal] = useState();
   const props = { openModal, setOpenModal };
   return (
-    <div className="bg-text-white projectDimensions rounded-lg">
+    <div className="h-100 p-4 bg-text-white project-dimensions rounded-lg items-center justify-center flex flex-col ">
       <h1
-        className="text-text-black text-xl text-center font-bold flex items-center justify-center"
-        style={{ height: "10%" }}
+        className="h-1/5 text-text-black sm:text-xl text-xl text-center font-bold flex items-center justify-center"
       >
         {project.title}
       </h1>
 
-      <div className="mx-auto h-3/4 px-4">
+      <div className="flex flex-col mx-auto w-full h-full px-4">
         <Carousel
           slide={false}
           data-model-toggle="staticModal"
@@ -59,7 +58,7 @@ const ProjectCard = ({ project }) => {
         <div className=" flex justify-center items-center h-1/5">
           <Button
             onClick={() => props.setOpenModal("default")}
-            className="mx-auto"
+            className="mx-auto mt-4"
             pill
             color="dark"
             theme={{

@@ -1,4 +1,4 @@
-  "use client";
+"use client";
   import "./page.scss";
   import React from "react";
 
@@ -12,6 +12,7 @@
 
   export default function Home() {
     const [activeTab, setActiveTab] = useState('Home');
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     const tabs = [
       { label: 'Home', component: <HomeSection /> },
       { label: 'Portfolio', component: <PortfolioSection /> },
@@ -19,18 +20,50 @@
       { label: 'Countries Visited', component: <CountriesVisitedSection /> },
     ];
 
+    const handleTabClick = (label) => {
+      setActiveTab(label);
+      setSidebarOpen(false);
+    };
+
     return (
       <div className="app-container">
+        {/* Mobile sidebar button */}
+        <button
+          className="sidebar-toggle"
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-label="Open menu"
+        >
+          <span className="sidebar-toggle-bar"></span>
+          <span className="sidebar-toggle-bar"></span>
+          <span className="sidebar-toggle-bar"></span>
+        </button>
+
+        {/* Desktop header */}
         <div className="header-section">
           {tabs.map(tab => (
             <button
               key={tab.label}
-              className={`px-4 py-2 rounded font-semibold transition-colors duration-200 ${activeTab === tab.label ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800 hover:bg-blue-200'}`}
+              className={`tab-btn font-semibold transition-colors duration-200 ${activeTab === tab.label ? 'active' : ''}`}
               onClick={() => setActiveTab(tab.label)}
             >
               {tab.label}
             </button>
           ))}
+        </div>
+
+        {/* Mobile sidebar */}
+        <div className={`sidebar-menu${sidebarOpen ? ' open' : ''}`}>
+          <div className="sidebar-menu-content">
+            {tabs.map(tab => (
+              <button
+                key={tab.label}
+                className={`tab-btn sidebar-tab-btn font-semibold ${activeTab === tab.label ? 'active' : ''}`}
+                onClick={() => handleTabClick(tab.label)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="content-section">

@@ -40,7 +40,7 @@ const DropdownMenu = ({
     <div>
       <Button
         onClick={() => props.setOpenModal("default")}
-        className="my-2 sm:px-16 py-2 sm:py-4 mx-2 sm:mx-8"
+        className="dropdown-button mt-2 px-0 sm:px-0 py-0 sm:py-2 mx-1 sm:mx-2 [&>span]:px-[8px] sm:[&>span]:px-4"
         pill
         color="dark"
         theme={{

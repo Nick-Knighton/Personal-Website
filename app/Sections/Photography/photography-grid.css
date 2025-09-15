@@ -7,9 +7,6 @@
     overflow-x: hidden;
     overflow-y: auto;
     /* Make container 80% of its parent section's height */
-    height: 80%;
-    max-height: 80vh; /* don't exceed viewport height */
-    min-height: 300px; /* reasonable minimum */
 
     gap: 15px;
     border-radius: 8px;
